@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Login</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+
+  <body class="d-flex flex-column h-100">
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+      <a class="navbar-brand" href="index.html">Void</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="join.html">Join</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--Navigation -->
+
+
+    <!-- Actual content should go within .container & .mb-5. This .mb-5 is need to put good space within footer and content. -->
+    <!-- class, id - should use dash whenever needed. name - should use underscore whenever needed. -->
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-md-4 offset-md-4">
+
+          <h2 class="text-center">Login</h2>
+
+          <form action="dashboard.html" method="post">
+
+
+            <!-- One the account is created, we're going to send an email with verification link. At this time, this alert will display -->
+            <!-- <div class="alert alert-dismissible alert-danger">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <strong>Attention!</strong> Your account is no longer active. Please contact your Administrator.
+            </div> -->
+
+
+            <!-- Email -->
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+
+
+            <!-- If something wrong happen with Email or Password, this is how it is going to display as problem. -->
+            <!-- <div class="form-group has-danger">
+              <label class="form-control-label" for="email">Email</label>
+              <input type="email" class="form-control is-invalid" id="email" name="email" placeholder="you@example.com" required>
+              <div class="invalid-feedback">Entered email is not found within system.</div>
+            </div> -->
+
+
+            <!-- Password -->
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Super Secret" required>
+            </div>
+
+
+            <!-- Login button -->
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-block">Yes! Let me In</button>
+            </div>
+
+
+            <!-- Forgot password link -->
+            <div class="form-group">
+              <a href="forgot-password.html">Forgot password?</a>
+            </div>
+
+
+          </form>
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- A common footer -->
+    <footer class="footer bg-secondary text-muted mt-auto py-3">
+      <div class="container">
+        Your informative footer goes here. You might add version or helpful links. How about last access informative? Or may be just about, company, career links?
+      </div>
+    </footer>
+
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

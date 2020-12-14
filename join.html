@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Create an account</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+
+  <body class="d-flex flex-column h-100">
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+      <a class="navbar-brand" href="index.html">Void</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="join.html">Join</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--Navigation -->
+
+
+    <!-- Actual content should go within .container & .mb-5. This .mb-5 is need to put good space within footer and content. -->
+    <!-- class, id - should use dash whenever needed. name - should use underscore whenever needed. -->
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-md-4 offset-md-4">
+
+          <h2 class="text-center">Create an account</h2>
+
+          <form action="join.html" method="post">
+
+
+            <!-- One the account is created, we're going to send an email with verification link. At this time, this alert will display -->
+            <!-- <div class="alert alert-dismissible alert-success">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <strong>Yay!</strong> Your account is created. We sent you an email. Please verify your account by clicking the link from email.
+            </div> -->
+
+
+            <!-- First Name -->
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" class="form-control" id="first-name" name="first_name" placeholder="John" required>
+            </div>
+
+
+            <!-- If something wrong happen with First Name, Last Name, Email or Password, this is how it is going to display as problem. -->
+            <!-- <div class="form-group has-danger">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" class="form-control is-invalid" id="first-name" name="first_name" placeholder="John" required>
+                <div class="invalid-feedback">You name should at least two characters long.</div>
+              </div>
+            </div> -->
+
+
+            <!-- Last Name -->
+            <div class="form-group">
+              <label for="first-name">Last Name</label>
+              <input type="text" class="form-control" id="last-name" name="last_name" placeholder="Doe" required>
+            </div>
+
+
+            <!-- Email -->
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+
+
+            <!-- Password -->
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" name="password" placeholder="Super Secret">
+            </div>
+
+
+            <!-- Confirm your password again! -->
+            <div class="form-group">
+              <label for="confirm-password">Confirm Password</label>
+              <input type="password" class="form-control" id="confirm-password" name="confirm_password" placeholder="Repeat your Super Secret">
+            </div>
+
+
+            <!-- Create an account button -->
+            <div class="form-group mt-4">
+              <button type="submit" class="btn btn-primary btn-block">Create an account</button>
+            </div>
+
+
+          </form>
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- A common footer -->
+    <footer class="footer bg-secondary text-muted mt-auto py-3">
+      <div class="container">
+        Your informative footer goes here. You might add version or helpful links. How about last access informative? Or may be just about, company, career links?
+      </div>
+    </footer>
+
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
