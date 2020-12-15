@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Issues</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+
+  <body class="d-flex flex-column h-100">
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+      <a class="navbar-brand" href="index.html">Void</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+
+
+        <!-- Left -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="dashboard.html" class="nav-link">Dashboard</a>
+          </li>
+          <li class="nav-item active">
+            <a href="issues.html" class="nav-link">Issues</a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="create.html" class="nav-link">Create</a>
+          </li>
+        </ul>
+
+
+        <!-- Right -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="settings.html">Settings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="logout.html">Logout</a>
+          </li>
+        </ul>
+
+
+      </div>
+    </nav>
+    <!--Navigation -->
+
+
+    <div class="container mb-5">
+      <!-- Search -->
+      <div class="row">
+        <div class="col-md-12">
+
+          <h2 class="text-center mb-3">Issues <span class="text-muted">(160)</span></h2>
+
+
+          <form action="issues.html" method="post">
+
+
+            <!-- An in-line for to search -->
+            <div class="form-row">
+
+              <!-- Title: A little big than others -->
+              <div class="col-5">
+                <div class="form-group">
+                  <label for="title">Title</label>
+                  <input type="text" class="form-control" id="title" name="title" placeholder="Title">
+                </div>
+              </div>
+
+
+              <!-- Assigned To -->
+              <div class="col">
+                <div class="form-group">
+                  <label for="assigned-to">Assigned To</label>
+                  <select class="custom-select" id="assigned-to" name="assigned_to">
+                    <option selected="">All</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+
+
+              <!-- Due Date -->
+              <div class="col">
+                <div class="form-group">
+                  <label for="due-date">Due date</label>
+                  <input type="date" class="form-control" placeholder="Due date">
+                </div>
+              </div>
+
+
+              <!-- A search button for in-line form -->
+              <div class="col justify-content-end align-items-end d-flex">
+                <div class="form-group">
+                  <button type="submit" class="btn btn-primary btn-block">Search</button>
+                </div>
+              </div>
+
+
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+
+      <!-- List of issues -->
+      <!-- By default 10 issues are going to display. ORDER BY - Recently Updated. Then we'll have pagination to go ahead or back. -->
+      <div class="row">
+        <div class="col-md-12">
+
+
+          <!-- Issue card - It should display following items - #, Title, excerpt description, due date, assigned to, type, priority, status -->
+          <div class="list-group mb-1">
+            <a href="issue.html" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1"><span class="text-muted">#4</span> Add a support for username</h5>
+                <small>3 days ago</small>
+              </div>
+              <p class="mb-1">
+                Currently, we supports login via email. Add a support for username with email.
+              </p>
+              <small>Assigned - John Doe</small>
+              &mdash;
+              <small>Type - Enhancement</small>
+              &mdash;
+              <small>Priority - High</small>
+              &mdash;
+              <small>Status - In-progress</small>
+            </a>
+          </div>
+
+          <div class="list-group mb-1">
+            <a href="issue.html" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1"><span class="text-muted">#4</span> Add a support for username</h5>
+                <small>3 days ago</small>
+              </div>
+              <p class="mb-1">
+                Currently, we supports login via email. Add a support for username with email.
+              </p>
+              <small>Assigned - John Doe</small>
+              &mdash;
+              <small>Type - Enhancement</small>
+              &mdash;
+              <small>Priority - High</small>
+              &mdash;
+              <small>Status - In-progress</small>
+            </a>
+          </div>
+
+
+          <div class="list-group mb-1">
+            <a href="issue.html" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1"><span class="text-muted">#4</span> Add a support for username</h5>
+                <small>3 days ago</small>
+              </div>
+              <p class="mb-1">
+                Currently, we supports login via email. Add a support for username with email.
+              </p>
+              <small>Assigned - John Doe</small>
+              &mdash;
+              <small>Type - Enhancement</small>
+              &mdash;
+              <small>Priority - High</small>
+              &mdash;
+              <small>Status - In-progress</small>
+            </a>
+          </div>
+
+
+          <div class="list-group mb-1">
+            <a href="issue.html" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1"><span class="text-muted">#4</span> Add a support for username</h5>
+                <small>3 days ago</small>
+              </div>
+              <p class="mb-1">
+                Currently, we supports login via email. Add a support for username with email.
+              </p>
+              <small>Assigned - John Doe</small>
+              &mdash;
+              <small>Type - Enhancement</small>
+              &mdash;
+              <small>Priority - High</small>
+              &mdash;
+              <small>Status - In-progress</small>
+            </a>
+          </div>
+
+
+          <div class="list-group mb-1">
+            <a href="issue.html" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1"><span class="text-muted">#4</span> Add a support for username</h5>
+                <small>3 days ago</small>
+              </div>
+              <p class="mb-1">
+                Currently, we supports login via email. Add a support for username with email.
+              </p>
+              <small>Assigned - John Doe</small>
+              &mdash;
+              <small>Type - Enhancement</small>
+              &mdash;
+              <small>Priority - High</small>
+              &mdash;
+              <small>Status - In-progress</small>
+            </a>
+          </div>
+
+
+          <div class="list-group mb-1">
+            <a href="issue.html" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1"><span class="text-muted">#4</span> Add a support for username</h5>
+                <small>3 days ago</small>
+              </div>
+              <p class="mb-1">
+                Currently, we supports login via email. Add a support for username with email.
+              </p>
+              <small>Assigned - John Doe</small>
+              &mdash;
+              <small>Type - Enhancement</small>
+              &mdash;
+              <small>Priority - High</small>
+              &mdash;
+              <small>Status - In-progress</small>
+            </a>
+          </div>
+
+
+          <div class="list-group mb-1">
+            <a href="issue.html" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1"><span class="text-muted">#4</span> Add a support for username</h5>
+                <small>3 days ago</small>
+              </div>
+              <p class="mb-1">
+                Currently, we supports login via email. Add a support for username with email.
+              </p>
+              <small>Assigned - John Doe</small>
+              &mdash;
+              <small>Type - Enhancement</small>
+              &mdash;
+              <small>Priority - High</small>
+              &mdash;
+              <small>Status - In-progress</small>
+            </a>
+          </div>
+
+
+          <div class="list-group mb-1">
+            <a href="issue.html" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1"><span class="text-muted">#4</span> Add a support for username</h5>
+                <small>3 days ago</small>
+              </div>
+              <p class="mb-1">
+                Currently, we supports login via email. Add a support for username with email.
+              </p>
+              <small>Assigned - John Doe</small>
+              &mdash;
+              <small>Type - Enhancement</small>
+              &mdash;
+              <small>Priority - High</small>
+              &mdash;
+              <small>Status - In-progress</small>
+            </a>
+          </div>
+
+
+          <div class="list-group mb-1">
+            <a href="issue.html" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1"><span class="text-muted">#4</span> Add a support for username</h5>
+                <small>3 days ago</small>
+              </div>
+              <p class="mb-1">
+                Currently, we supports login via email. Add a support for username with email.
+              </p>
+              <small>Assigned - John Doe</small>
+              &mdash;
+              <small>Type - Enhancement</small>
+              &mdash;
+              <small>Priority - High</small>
+              &mdash;
+              <small>Status - In-progress</small>
+            </a>
+          </div>
+
+
+          <div class="list-group mb-1">
+            <a href="issue.html" class="list-group-item list-group-item-action flex-column align-items-start">
+              <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1"><span class="text-muted">#4</span> Add a support for username</h5>
+                <small>3 days ago</small>
+              </div>
+              <p class="mb-1">
+                Currently, we supports login via email. Add a support for username with email.
+              </p>
+              <small>Assigned - John Doe</small>
+              &mdash;
+              <small>Type - Enhancement</small>
+              &mdash;
+              <small>Priority - High</small>
+              &mdash;
+              <small>Status - In-progress</small>
+            </a>
+          </div>
+
+        </div>
+
+
+
+        <!-- Navigation: Prev & Next -->
+        <div class="col-md-12 mt-3 text-right">
+          <button type="button" class="btn btn-secondary">Previous</button>
+          <button type="button" class="btn btn-secondary">Next</button>
+        </div>
+ 
+
+      </div>
+    </div>
+
+
+    <!-- A common footer -->
+    <footer class="footer bg-secondary text-muted mt-auto py-3">
+      <div class="container">
+        Your informative footer goes here. You might add version or helpful links. How about last access informative? Or may be just about, company, career links?
+      </div>
+    </footer>
+
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

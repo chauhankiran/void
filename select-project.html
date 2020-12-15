@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Choose default project</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+
+  <body class="d-flex flex-column h-100 justify-content-center align-content-center">
+
+      <div class="container">
+        <div class="row">
+
+
+          <!-- Header -->
+          <div class="col-md-4 offset-md-4 text-center mb-3">
+            <h2>Choose default project</h2>
+          </div>
+
+
+          <!-- An informative alert. This will display when given user has access to more than one project. -->
+          <div class="col-md-6 offset-md-3">
+            <div class="alert alert-dismissible alert-primary">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Hold on!</strong> You've more than one project to access. Please choose a default one. Don't worry! You can change it from setting.
+              </div>
+          </div>
+
+
+          <div class="col-md-4 offset-md-4">
+            <form action="dashboard.html" method="POST">
+
+
+              <!-- Choose a default project -->
+              <div class="form-group">
+                <label for="default-project">Default Project</label>
+                <select class="custom-select" id="default-project" name="default_project">
+                  <option value="1">Project 01</option>
+                  <option value="2">Project 02</option>
+                  <option value="3">Project 03</option>
+                </select>
+              </div>
+
+
+              <!-- Go with chosen project -->
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">Go!</button>
+              </div>
+
+
+            </form>
+          </div>
+
+
+        </div>
+      </div>
+
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
