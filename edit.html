@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Edit this issue</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+
+  <body class="d-flex flex-column h-100">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+      <a class="navbar-brand" href="index.html">Void</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="dashboard.html" class="nav-link">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a href="issues.html" class="nav-link">Issues</a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="create.html" class="nav-link">Create</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="settings.html">Settings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="logout.html">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <div class="container mb-3">
+      <div class="row">
+        <div class="col-md-4 offset-md-4">
+          <h2 class="text-center">Edit this issue</h2>
+
+
+          <!-- The main issue edit form -->
+          <!-- Haven't written here but display needed alert message here if validation failed -->
+          <form action="issues.html" method="post">
+
+
+            <!-- Title -->
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input type="text" class="form-control" id="title" placeholder="Short informative title" value="Add a support for username">
+              <small class="form-text text-muted">
+                This issue has 7 comments.
+              </small>
+            </div>
+
+
+            <!-- Description -->
+            <div class="form-group">
+              <label for="description">Description</label>
+              <textarea id="description" class="form-control" placeholder="Detail description of the issue.">Currently, we supports login via email. Add a support for username with email. In order to do that, first we need to add a column for username. Asked user to create username and the provide a support for username login. Do not cause any problem with login with email.</textarea>
+            </div>
+
+
+            <!-- Assigned To -->
+            <div class="form-group">
+              <label for="assigned-to">Assigned To</label>
+              <select class="custom-select" id="assigned-to">
+                <option>None</option>
+                <option value="1" selected="">John Doe</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+
+
+            <!-- Type -->
+            <div class="form-group">
+              <label for="type">Type</label>
+              <select class="custom-select" id="type">
+                <option>None</option>
+                <option value="1" selected="">Enhancement</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+
+
+            <!-- Priority -->
+            <div class="form-group">
+              <label for="priority">Priority</label>
+              <select class="custom-select" id="priority">
+                <option>None</option>
+                <option value="1">One</option>
+                <option value="2" selected="">High</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+
+
+            <!-- Due date with value to edit. -->
+            <div class="form-group">
+              <label for="due-date">Due date</label>
+              <input type="date" id="due-date" class="form-control" value="2020-12-21">
+            </div>
+
+            <!-- An update button -->
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-block">Update</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- A common footer -->
+    <footer class="footer bg-secondary text-muted mt-auto py-3">
+      <div class="container">
+        Your informative footer goes here. You might add version or helpful links. How about last access informative? Or may be just about, company, career links?
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
